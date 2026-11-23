@@ -1,0 +1,64 @@
+characters = {
+    VIT_leader = {
+        name = Detais_leader
+
+        portraits = {
+            civilian = {
+                large = GFX_Detais
+            }
+        }
+
+        country_leader = {
+            ideology = conservatism
+            expire = "2000.1.1.1"
+            id = -1
+            traits = { the_republican_rebel }
+        }
+    }
+}
+characters = {
+    VIT_goat_commander = {
+        name = VIT_goat_commander
+
+        portraits = {
+            army = {
+                large = GFX_VIT_Goat_General
+                small = GFX_VIT_Goat_General_small
+            }
+        }
+
+        corps_commander = {
+            skill = 4
+            attack_skill = 3
+            defense_skill = 5
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+VIT_chlenover_junior = {
+    name = VIT_chlenover_junior
+
+    portraits = {
+        civilian = {
+            large = GFX_portrait_VIT_Dog
+        }
+    }
+
+    advisor = {
+        slot = high_command
+        idea_token = VIT_chlenover_junior_high_command
+        cost = 150
+
+        allowed = {
+            original_tag = VIT
+        }
+
+        available = {
+            always = yes
+        }
+
+        traits = {
+            VIT_dog_hp_advisor
+        }
+    }
+}

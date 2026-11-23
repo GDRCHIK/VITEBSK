@@ -1,0 +1,22 @@
+on_actions = {
+	on_daily_VIT = {
+		effect = {
+			if = {
+				limit = {
+					is_subject = yes
+					NOT = { has_country_flag = VIT_puppet_tree }
+				}
+				set_country_flag = VIT_puppet_tree
+				load_focus_tree = { tree = vit_puppet_focus_tree keep_completed = yes }
+			}
+			if = {
+				limit = {
+					is_subject = no
+					has_country_flag = VIT_puppet_tree
+				}
+				clr_country_flag = VIT_puppet_tree
+				load_focus_tree = { tree = vit_focus_tree keep_completed = yes }
+			}
+		}
+	}
+}

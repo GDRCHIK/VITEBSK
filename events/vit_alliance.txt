@@ -1,0 +1,69 @@
+add_namespace = vit_alliance
+
+# --- СОБЫТИЕ ДЛЯ ГЕРМАНИИ (Ось) ---
+country_event = {
+	id = vit_alliance.4
+	title = vit_alliance.4.t
+	desc = vit_alliance.4.d
+	picture = GFX_news_event_generic_sign_treaty1 # можешь поменять картинку
+	
+	is_triggered_only = yes # Важно! Событие сработает только когда его вызовут из фокуса
+
+	option = {
+		name = vit_alliance.4.a # Принять
+		ai_chance = { base = 50 } # Шанс 50%
+		VIT = { 
+			country_event = { id = vit_alliance.5 } # Отправляем ответ Витебску
+			GER = { add_to_faction = VIT } # Кидаем их в Ось
+		}
+	}
+	option = {
+		name = vit_alliance.4.b # Отказать
+		ai_chance = { base = 50 } # Шанс 50%
+		VIT = { 
+			country_event = { id = vit_alliance.6 } # Отправляем ответ Витебску об отказе
+		}
+	}
+}
+
+# --- СОБЫТИЕ ДЛЯ АНГЛИИ (Союзники) ---
+country_event = {
+	id = vit_alliance.1
+	title = vit_alliance.1.t
+	desc = vit_alliance.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = vit_alliance.1.a # Принять
+		ai_chance = { base = 50 }
+		VIT = { 
+			country_event = { id = vit_alliance.2 } 
+			ENG = { add_to_faction = VIT } # Кидаем в Союзники
+		}
+	}
+	option = {
+		name = vit_alliance.1.b # Отказать
+		ai_chance = { base = 50 }
+		VIT = { 
+			country_event = { id = vit_alliance.3 } 
+		}
+	}
+}
+
+# --- ОТВЕТНЫЕ СОБЫТИЯ ДЛЯ ВИТЕБСКА (чтобы ты видел результат) ---
+country_event = {
+	id = vit_alliance.5
+	title = vit_alliance.5.t
+	desc = vit_alliance.5.d
+	is_triggered_only = yes
+	option = { name = vit_alliance.5.a }
+}
+country_event = {
+	id = vit_alliance.6
+	title = vit_alliance.6.t
+	desc = vit_alliance.6.d
+	is_triggered_only = yes
+	option = { name = vit_alliance.6.a }
+}

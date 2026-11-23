@@ -1,0 +1,32 @@
+add_namespace = vit_latvia
+
+country_event = {
+	id = vit_latvia.1
+	title = vit_latvia.1.t
+	desc = vit_latvia.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+
+	# ВАРИАНТ 1: Латвия сдается (50%)
+	option = {
+		name = vit_latvia.1.a
+		ai_chance = { base = 50 }
+		# Тут прописываешь, что происходит, если Латвия соглашается (например, стать марионеткой)
+		puppet = VIT 
+		# Или annex_country = { target = LAT } если хочешь просто аннексировать
+		
+		# Отправляем уведомление Витебску
+		VIT = { country_event = { id = vit_latvia.2 days = 1 } }
+	}
+
+	# ВАРИАНТ 2: Латвия отказывается (50%)
+	option = {
+		name = vit_latvia.1.b
+		ai_chance = { base = 50 }
+		# Тут можно дать Витебску повод на войну (casus belli)
+		VIT = { 
+			country_event = { id = vit_latvia.3 days = 1 } 
+			create_wargoal = { type = take_claimed_state target = LAT }
+		}
+	}

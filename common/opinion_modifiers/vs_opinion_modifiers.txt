@@ -1,0 +1,14 @@
+opinion_modifiers = {
+	VIT_appeal_opinion = {
+		value = 30
+		decay = 0.5
+	}
+	VIT_german_opinion = {
+		value = 30
+		decay = 0.5
+	}
+	VIT_friendship_opinion = {
+		value = 30
+		decay = 0.5
+	}
+}

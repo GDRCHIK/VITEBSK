@@ -1,0 +1,78 @@
+add_namespace = vit_buy_colony
+add_namespace = vit_egypt
+
+# --- СОБЫТИЯ ДЛЯ ИНДИИ ---
+country_event = {
+	id = vit_buy_colony.1
+	title = vit_buy_colony.1.t
+	desc = vit_buy_colony.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	option = {
+		name = vit_buy_colony.1.a
+		ai_chance = { base = 50 }
+		RAJ = {
+			every_owned_state = { transfer_state_to = VIT }
+		}
+		VIT = { country_event = { id = vit_buy_colony.2 days = 1 } }
+	}
+	option = {
+		name = vit_buy_colony.1.b
+		ai_chance = { base = 50 }
+		VIT = { country_event = { id = vit_buy_colony.3 days = 1 } }
+	}
+}
+
+country_event = {
+	id = vit_buy_colony.2
+	title = vit_buy_colony.2.t
+	desc = vit_buy_colony.2.d
+	is_triggered_only = yes
+	option = { name = vit_buy_colony.2.a }
+}
+
+country_event = {
+	id = vit_buy_colony.3
+	title = vit_buy_colony.3.t
+	desc = vit_buy_colony.3.d
+	is_triggered_only = yes
+	option = { name = vit_buy_colony.3.a }
+}
+
+# --- СОБЫТИЯ ДЛЯ ЕГИПТА ---
+country_event = {
+	id = vit_egypt.1
+	title = vit_egypt.1.t
+	desc = vit_egypt.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+	is_triggered_only = yes
+
+	option = {
+		name = vit_egypt.1.a
+		ai_chance = { base = 50 }
+		ENG = { release = EGY }
+		VIT = { country_event = { id = vit_egypt.2 days = 1 } }
+	}
+	option = {
+		name = vit_egypt.1.b
+		ai_chance = { base = 50 }
+		VIT = { country_event = { id = vit_egypt.3 days = 1 } }
+	}
+}
+
+country_event = {
+	id = vit_egypt.2
+	title = vit_egypt.2.t
+	desc = vit_egypt.2.d
+	is_triggered_only = yes
+	option = { name = vit_egypt.2.a }
+}
+
+country_event = {
+	id = vit_egypt.3
+	title = vit_egypt.3.t
+	desc = vit_egypt.3.d
+	is_triggered_only = yes
+	option = { name = vit_egypt.3.a }
+}

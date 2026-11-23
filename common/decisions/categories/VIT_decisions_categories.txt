@@ -1,0 +1,4 @@
+VIT_decisions = {
+	icon = generic_political_actions
+	allowed = { tag = VIT }
+}

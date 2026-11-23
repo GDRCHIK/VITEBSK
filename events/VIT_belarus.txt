@@ -1,0 +1,66 @@
+add_namespace = vit_belarus
+
+# РЈР»СЊС‚РёРјР°С‚СѓРј РґР»СЏ РЎРЎРЎР  (РєР°Рє РљР°СЂРµР»РёСЏ РґР»СЏ Р¤РёРЅР»СЏРЅРґРёРё)
+country_event = {
+	id = vit_belarus.1
+	title = vit_belarus.1.t
+	desc = vit_belarus.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = vit_belarus.1.a
+		ai_chance = { base = 50 }
+		every_state = {
+			limit = {
+				is_core_of = BLR
+				is_owned_by = SOV
+			}
+			set_state_owner_to = VIT
+			set_state_controller_to = VIT
+			add_core_of = VIT
+		}
+		VIT = { country_event = { id = vit_belarus.2 } }
+	}
+	option = {
+		name = vit_belarus.1.b
+		ai_chance = { base = 50 }
+		VIT = { country_event = { id = vit_belarus.3 } }
+	}
+}
+
+# Р’РёС‚РµР±СЃРє: РЎРЎРЎР  СЃРѕРіР»Р°СЃРёР»СЃСЏ
+country_event = {
+	id = vit_belarus.2
+	title = vit_belarus.2.t
+	desc = vit_belarus.2.d
+	is_triggered_only = yes
+	option = {
+		name = vit_belarus.2.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+	}
+}
+
+# Р’РёС‚РµР±СЃРє: РЎРЎРЎР  РѕС‚РєР°Р·Р°Р»СЃСЏ -> РІРѕР№РЅР° СЃ РѕРіСЂРѕРјРЅС‹РјРё Р±РѕРЅСѓСЃР°РјРё
+country_event = {
+	id = vit_belarus.3
+	title = vit_belarus.3.t
+	desc = vit_belarus.3.d
+	is_triggered_only = yes
+	option = {
+		name = vit_belarus.3.a
+		add_ideas = VITF_fury_spirit
+		add_manpower = 1000000
+		army_experience = 300
+		add_war_support = 0.3
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 10000 producer = VIT }
+		add_equipment_to_stockpile = { type = support_equipment amount = 2000 producer = VIT }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 1500 producer = VIT }
+		add_equipment_to_stockpile = { type = anti_tank_equipment amount = 1500 producer = VIT }
+		capital_scope = {
+			add_building_construction = { type = arms_factory level = 10 instant_build = yes }
+		}
+		declare_war_on = { target = SOV type = take_claimed_state }
+	}
+}

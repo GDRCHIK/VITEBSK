@@ -1,0 +1,397 @@
+ideas = {
+	country = {
+		VITF_START_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				stability_factor = 0.10
+				political_power_gain = 0.25
+			}
+		}
+		VITF_R1_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.20
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.30
+			}
+		}
+		VITF_R2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.50
+				weekly_manpower = 3000
+				training_time_factor = -0.40
+			}
+		}
+		VITF_R3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				production_factory_max_efficiency_factor = 0.30
+				production_factory_efficiency_gain_factor = 0.40
+			}
+		}
+		VITF_R4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.35
+				army_defence_factor = 0.35
+				army_org_factor = 0.30
+				army_speed_factor = 0.20
+				experience_gain_army_factor = 0.50
+			}
+		}
+		VITF_R5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.50
+				army_defence_factor = 0.50
+				production_factory_max_efficiency_factor = 0.50
+				production_factory_efficiency_gain_factor = 0.50
+				conscription_factor = 0.30
+			}
+		}
+		VITF_R6_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.75
+				army_defence_factor = 0.75
+				army_org_factor = 0.40
+				army_speed_factor = 0.25
+				planning_speed = 0.50
+				max_planning = 0.30
+				supply_consumption_factor = -0.25
+			}
+		}
+		VITF_I1_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_speed_buildings_factor = 0.50
+				consumer_goods_factor = -0.10
+			}
+		}
+		VITF_I2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.40
+				production_speed_buildings_factor = 0.40
+				stability_factor = 0.10
+			}
+		}
+		VITF_I3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.50
+				production_speed_buildings_factor = 0.50
+				consumer_goods_factor = -0.15
+			}
+		}
+		VITF_I4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.50
+				production_factory_max_efficiency_factor = 0.30
+				production_factory_efficiency_gain_factor = 0.50
+				license_purchase_cost = -0.50
+			}
+		}
+		VITF_I5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.75
+				production_speed_buildings_factor = 0.75
+				production_factory_max_efficiency_factor = 0.50
+				production_factory_efficiency_gain_factor = 0.75
+				research_speed_factor = 0.50
+				consumer_goods_factor = -0.20
+			}
+		}
+		VITF_I6_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_speed_buildings_factor = 0.40
+			}
+		}
+		VITF_I7_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_speed_buildings_factor = 0.40
+				consumer_goods_factor = -0.10
+			}
+		}
+		VITF_I8_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.40
+				license_purchase_cost = -0.50
+				research_speed_factor = 0.30
+				political_power_gain = 0.20
+			}
+		}
+		VITF_I9_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.75
+				supply_consumption_factor = -0.20
+			}
+		}
+		VITF_I10_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.50
+				production_speed_buildings_factor = 0.50
+			}
+		}
+		VITF_K2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				industrial_capacity_factory = 0.20
+				political_power_gain = 0.20
+			}
+		}
+		VITF_K3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.50
+				war_support_factor = 0.30
+				stability_factor = 0.15
+			}
+		}
+		VITF_K4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.30
+				drift_defence_factor = 0.50
+				army_org_factor = 0.20
+			}
+		}
+		VITF_K5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 4000
+				conscription_factor = 0.50
+				army_attack_factor = 0.50
+				army_defence_factor = 0.40
+				industrial_capacity_factory = 0.40
+				war_support_factor = 0.30
+			}
+		}
+		VITF_N1_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.30
+				conscription_factor = 0.20
+			}
+		}
+		VITF_N2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.40
+				stability_factor = 0.10
+				war_support_factor = 0.20
+			}
+		}
+		VITF_N3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.25
+				stability_factor = 0.15
+				drift_defence_factor = 0.50
+			}
+		}
+		VITF_N4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.40
+				army_org_factor = 0.30
+				stability_factor = 0.20
+			}
+		}
+		VITF_N5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.50
+				army_org_factor = 0.30
+				conscription_factor = 0.40
+				industrial_capacity_factory = 0.30
+				political_power_gain = 0.30
+			}
+		}
+		VITF_N6_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				war_support_factor = 0.20
+				conscription_factor = 0.10
+			}
+		}
+		ideas1 = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
+		VITF_development_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_speed_buildings_factor = 0.30
+			}
+		}
+		VITF_D2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				research_speed_factor = 0.20
+				industrial_capacity_factory = 0.15
+			}
+		}
+		VITF_D3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.15
+				research_speed_factor = 0.20
+			}
+		}
+		VITF_D4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.30
+				war_support_factor = 0.20
+				stability_factor = 0.15
+			}
+		}
+		VITF_D5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.50
+				army_attack_factor = 0.30
+				research_speed_factor = 0.30
+				industrial_capacity_factory = 0.25
+				stability_factor = 0.20
+			}
+		}
+		VITF_M2_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = 0.20
+				drift_defence_factor = 0.30
+			}
+		}
+		VITF_M3_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = 0.30
+				weekly_manpower = 1500
+			}
+		}
+		VITF_M4_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.40
+				war_support_factor = 0.20
+				stability_factor = 0.15
+			}
+		}
+		VITF_M5_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.50
+				army_defence_factor = 0.50
+				stability_factor = 0.30
+				industrial_capacity_factory = 0.40
+				weekly_manpower = 3000
+				war_support_factor = 0.30
+				political_power_gain = 0.30
+			}
+		}
+		VITF_fury_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 1.00
+				army_defence_factor = 1.00
+				army_org_factor = 0.50
+				army_speed_factor = 0.30
+				weekly_manpower = 10000
+				conscription_factor = 0.50
+				max_dig_in_factor = 1.0
+				dig_in_speed_factor = 1.0
+				supply_consumption_factor = -0.50
+				production_factory_max_efficiency_factor = 0.50
+				production_factory_efficiency_gain_factor = 0.50
+				war_support_factor = 0.50
+				experience_gain_army_factor = 1.00
+				planning_speed = 0.50
+			}
+		}
+	}
+}
+
+              ideas = {
+	# Идея от фокуса "Подавить фашистские партии"
+	VIT_democratic_purge_idea = {
+		allowed = { tag = VIT }
+		modifier = {
+			stability_factor = 0.05 
+			industrial_capacity_factory = -0.05
+		}
+	}
+	
+	# Идея от фокуса "Бороться за свободу"
+	VIT_freedom_fighters_idea = {
+		allowed = { tag = VIT }
+		modifier = {
+			conscription_factor = 0.10 
+			army_org_factor = 0.05
+		}
+	}
+}

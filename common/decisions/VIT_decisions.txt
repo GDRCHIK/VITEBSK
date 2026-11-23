@@ -1,0 +1,60 @@
+VIT_decisions = {
+	VIT_latvia_ultimatum = {
+		allowed = { tag = VIT }
+		visible = { NOT = { has_country_flag = VIT_latvia_ultimatum_sent } }
+		available = {
+			country_exists = LAT
+			NOT = { has_country_flag = VIT_latvia_ultimatum_sent }
+		}
+		cost = 400
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = VIT_latvia_ultimatum_sent
+			LAT = { country_event = { id = vit_latvia.1 } }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	VIT_buy_colonies_category = {
+		icon = generic_political_actions
+		visible = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	
+	VIT_buy_colony_raj = {
+		allowed = { tag = VIT }
+		decision_category = VIT_buy_colonies_category
+
+		available = {
+			country_exists = RAJ
+			RAJ = { OR = { is_in_faction_with = ENG is_puppet_of = ENG } }
+			NOT = { has_country_flag = VIT_bought_raj }
+		}
+		cost = 150
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = VIT_bought_raj
+			RAJ = { country_event = { id = vit_buy_colony.1 } }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	VIT_buy_colony_egypt = {
+		allowed = { tag = VIT }
+		decision_category = VIT_buy_colonies_category
+		available = {
+			country_exists = EGY
+			NOT = { has_country_flag = VIT_bought_egypt }
+		}
+		cost = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = VIT_bought_egypt
+			EGY = { country_event = { id = vit_buy_colony.2 } }
+		}
+		ai_will_do = { factor = 0 }
+	}

@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Detais"
+		texturefile = "gfx/leaders/VIT/Portrait_VIT_Detais.dds"
+	}
+
+	spriteType = {
+		name = "GFX_VIT_Goat_General"
+		texturefile = "gfx/leaders/VIT/Portrait_VIT_Goat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_VIT_Goat_General_small"
+		texturefile = "gfx/leaders/VIT/Portrait_VIT_Goat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_VIT_Dog"
+		texturefile = "gfx/leaders/VIT/Portrait_VIT_Dog.dds"
+	}
+}
